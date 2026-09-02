@@ -46,7 +46,6 @@ On September 2, 2026, a simulated brute-force authentication attack was launched
 
 ## 5\. MITRE ATT\&CK Mapping
 
-|Tactic|Technique|ID|<img width="1280" height="484" alt="Kali Linux — brute-force attack execution" src="https://github.com/user-attachments/assets/fa8b3af1-37fa-43a8-9dc0-d64ceed902d1" />
 
 |-|-|-|
 |Credential Access|Brute Force: Password Guessing|[T1110.001](https://attack.mitre.org/techniques/T1110/001/)|
