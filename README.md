@@ -71,8 +71,6 @@ Building this lab surfaced a number of real infrastructure problems — working 
 
 * `README.md` — this file
 * `incident-report.md` — full incident response write-up (NIST-style) for the SSH brute-force detection
-* `/configs` — sanitized `ossec.conf` (agent config) and Sysmon configuration used in this lab
-* `/screenshots` — dashboard views, alert details, and supporting evidence
 
 ## Key Takeaways
 
