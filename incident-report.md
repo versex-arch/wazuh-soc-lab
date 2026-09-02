@@ -28,6 +28,7 @@ On September 2, 2026, a simulated brute-force authentication attack was launched
 |4)|Wazuh Agent forwards each event to the Wazuh Manager over the encrypted agent channel (TCP/1514)|
 |5)|Analyst confirms all 20 events present in the Wazuh Dashboard, correlated to source IP and target account|
 
+
 ## 4\. Technical Details
 
 * **Technique:** Password guessing brute force against a live SSH service
@@ -45,7 +46,8 @@ On September 2, 2026, a simulated brute-force authentication attack was launched
 
 ## 5\. MITRE ATT\&CK Mapping
 
-|Tactic|Technique|ID|
+|Tactic|Technique|ID|<img width="1280" height="484" alt="Kali Linux — brute-force attack execution" src="https://github.com/user-attachments/assets/fa8b3af1-37fa-43a8-9dc0-d64ceed902d1" />
+
 |-|-|-|
 |Credential Access|Brute Force: Password Guessing|[T1110.001](https://attack.mitre.org/techniques/T1110/001/)|
 
@@ -69,9 +71,9 @@ In this lab scenario, no compromise occurred — the target account's password w
 
 * Dashboard view: 20 matching events for `agent.name: victim-win2 AND data.win.system.channel: OpenSSH/Operational`
 * Raw `full\\\\\\\_log` entry showing `Failed password for vboxuser from 192.168.139.7`
-* Windows Event Viewer (`OpenSSH/Operational`) corroborating the same failures at the source
 
-
+<img width="1277" height="764" alt="Wazuh Dashboard — 20 detected failed login events" src="https://github.com/user-attachments/assets/44c80de3-b5ac-45be-8920-52daad672408" />
+<img width="1280" height="484" alt="Kali Linux — brute-force attack execution" src="https://github.com/user-attachments/assets/ad7e9568-67f0-40f0-bdf1-0326301d2926" />
 
 ## 9\. Conclusion
 
